@@ -1,20 +1,19 @@
 ﻿/*
  * Anthony Wessel
  * Assignment 1 Challenge
- * Make the camera follow the player
+ * Spin the propeller
  */
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowPlayerX : MonoBehaviour
+public class Spin : MonoBehaviour
 {
-    public GameObject plane;
-    public Vector3 offset;
+    public float rotationSpeed;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = plane.transform.position + offset;
+        transform.Rotate(transform.forward, Time.deltaTime * rotationSpeed);
     }
 }
