@@ -1,16 +1,15 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 1 prototype
+ * Lose if player falls off road
+ */
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LoseOnFall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

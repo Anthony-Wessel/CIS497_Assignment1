@@ -1,6 +1,6 @@
 ﻿/*
  * Anthony Wessel
- * Prototype 1
+ * Assignment 1 prototype
  * Controls player movement
  */
 
@@ -14,12 +14,6 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed;
     float horizontalInput;
     float forwardInput;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

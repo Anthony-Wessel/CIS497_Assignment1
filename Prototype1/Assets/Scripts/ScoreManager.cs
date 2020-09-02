@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 1 prototype
+ * Manage the score and UI
+ */
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,18 +26,19 @@ public class ScoreManager : MonoBehaviour
 
     public void Update()
     {
-        if (!gameOver)
-        {
-            text.text = "Score: " + score;
-        }
-
+        // End game if player has reached all checkpoints
         if (score >= 3)
         {
             won = true;
             gameOver = true;
         }
 
-        if (gameOver)
+        // Update score UI if game is still going
+        if (!gameOver)
+        {
+            text.text = "Score: " + score;
+        }
+        else // Game has already ended
         {
             if (won)
             {
@@ -45,6 +51,7 @@ public class ScoreManager : MonoBehaviour
                     + "Press R to try again!";
             }
 
+            // Restart game
             if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(0);
         }
         

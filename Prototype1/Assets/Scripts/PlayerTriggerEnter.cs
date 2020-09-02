@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Anthony Wessel
+ * Assignment 1 prototype
+ * Increment score when player passes checkpoints
+ */
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
